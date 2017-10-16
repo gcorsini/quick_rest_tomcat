@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:jaxrs="http://cxf.apache.org/jaxrs" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
+
+	<!-- Create a bean for our underlying service -->
+	<bean id="helloService" class="org.jfclere.JaxRSExample.Hello"/>
+	
+	<!--  Tie everything together in a JAX-RS server -->
+	<jaxrs:server id="helloServer" address="/">
+		<jaxrs:serviceBeans>
+			<ref bean="helloService"/>
+		</jaxrs:serviceBeans>
+	</jaxrs:server>                        
+</beans>
