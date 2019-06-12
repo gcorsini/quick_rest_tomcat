@@ -40,34 +40,25 @@
             <version>3.3.2-SNAPSHOT</version>
         </dependency>
 
+        <!-- Uncomment me -->
+        <!--<dependency>-->
+        <!--<groupId>org.apache.cxf</groupId>-->
+        <!--<artifactId>cxf-rt-transports-http-jetty</artifactId>-->
+        <!--<version>3.3.2-SNAPSHOT</version>-->
+        <!--</dependency>-->
+
+        <!-- Uncomment me -->
         <dependency>
             <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-transports-http-jetty</artifactId>
+            <artifactId>cxf-rt-transports-http-tomcat</artifactId>
             <version>3.3.2-SNAPSHOT</version>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.apache.cxf</groupId>-->
-            <!--<artifactId>cxf-rt-transports-http-tomcat</artifactId>-->
-            <!--<version>3.3.2-SNAPSHOT</version>-->
-        <!--</dependency>-->
-
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <version>4.3.24.RELEASE</version>
         </dependency>
-
-
-        <!--<dependency>-->
-            <!--<groupId>org.apache.httpcomponents</groupId>-->
-            <!--<artifactId>httpclient</artifactId>-->
-            <!--<version>4.5.2</version>-->
-        <!--</dependency>-->
-
-
-
     </dependencies>
 
 
