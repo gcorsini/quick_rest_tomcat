@@ -42,7 +42,7 @@ public final class Client {
 //            System.out.println("please specify wsdl");
 //            System.exit(1);
 //        }
-        String wsdlPath = "/home/ivan/IdeaProjects/cxf/distribution/src/main/release/samples/wsdl_first_soap12/src/main/resources/wsdl/hello_world_soap12.wsdl";
+        String wsdlPath = "wsdl_first_soap12/src/main/resources/wsdl/hello_world_soap12.wsdl";
 
         URL wsdlURL;
         File wsdlFile = new File(wsdlPath);

@@ -41,7 +41,7 @@ public class Server {
     }
 
     public static void main(String[] args) throws Exception {
-        new Server("/home/ivan/IdeaProjects/cxf/distribution/src/main/release/samples/wsdl_first_soap12/src/main/resources/wsdl/hello_world_soap12.wsdl");
+        new Server("wsdl_first_soap12/src/main/resources/wsdl/hello_world_soap12.wsdl");
         System.out.println("Server ready...");
 
         Thread.sleep(5 * 60 * 1000);

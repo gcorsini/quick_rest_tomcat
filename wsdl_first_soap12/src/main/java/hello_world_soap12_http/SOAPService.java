@@ -16,7 +16,7 @@ import java.net.URL;
  *
  */
 @WebServiceClient(name = "SOAPService",
-                  wsdlLocation = "file:/home/ivan/IdeaProjects/cxf/testutils/src/main/resources/wsdl/hello_world_soap12.wsdl",
+                  wsdlLocation = "file:wsdl_first_soap12/src/main/resources/wsdl/hello_world_soap12.wsdl",
                   targetNamespace = "http://apache.org/hello_world_soap12_http")
 @Generated(value = "org.apache.cxf.tools.wsdlto.WSDLToJava", date = "2019-03-20T09:43:03.722+01:00", comments = "Apache CXF 3.3.2-SNAPSHOT-ba95fa0178063986f7ae2579fda808f1dd7c740e")
 public class SOAPService extends Service {
@@ -31,11 +31,11 @@ public class SOAPService extends Service {
     static {
         URL url = null;
         try {
-            url = new URL("file:/home/ivan/IdeaProjects/cxf/testutils/src/main/resources/wsdl/hello_world_soap12.wsdl");
+            url = new URL("file:./wsdl_first_soap12/src/main/resources/wsdl/hello_world_soap12.wsdl");
         } catch (MalformedURLException e) {
             java.util.logging.Logger.getLogger(SOAPService.class.getName())
                 .log(java.util.logging.Level.INFO,
-                     "Can not initialize the default wsdl from {0}", "file:/home/ivan/IdeaProjects/cxf/testutils/src/main/resources/wsdl/hello_world_soap12.wsdl");
+                     "Can not initialize the default wsdl from {0}", "file:./wsdl_first_soap12/src/main/resources/wsdl/hello_world_soap12.wsdl");
         }
         WSDL_LOCATION = url;
     }
